@@ -9,12 +9,12 @@ interface StyledInputProps extends InputProps {
  * Priority: Warning --> Success
  */
 
-const getBackground = ({icon}:InputProps) => {
+const getBackground = ({ icon }: InputProps) => {
   console.log(icon);
-  if(icon != ""){
+  if (icon != "") {
     return icon;
   }
-}
+};
 const getBoxShadow = ({ isSuccess = false, isWarning = false, theme }: StyledInputProps) => {
   if (isWarning) {
     return theme.shadows.warning;
@@ -43,9 +43,9 @@ const Input = styled.input<InputProps>`
   background-color: ${({ theme }) => theme.colors.input};
   border: 0;
   // background-image:url('${getBackground}');
-  background-repeat:no-repeat;
-  background-size:25px;
-  background-position:2% center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 2% center;
   border-radius: 16px;
   box-shadow: ${getBoxShadow};
   color: ${({ theme }) => theme.colors.text};
@@ -76,7 +76,7 @@ Input.defaultProps = {
   scale: scales.MD,
   isSuccess: false,
   isWarning: false,
-  icon:"https://image.flaticon.com/icons/png/512/1086/1086933.png",
+  icon: "https://image.flaticon.com/icons/png/512/1086/1086933.png",
 };
 
 export default Input;

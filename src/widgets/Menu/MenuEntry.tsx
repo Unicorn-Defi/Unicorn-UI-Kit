@@ -32,7 +32,8 @@ const MenuEntry = styled.div<Props>`
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   font-weight:bold
   color: ${({ theme }) => theme.colors.textSubtle};
-  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary},inset -4px 0px 0px ${theme.colors.primary}` : "none")};
+  box-shadow: ${({ isActive, theme }) =>
+    isActive ? `inset 4px 0px 0px ${theme.colors.primary},inset -4px 0px 0px ${theme.colors.primary}` : "none"};
 
   a {
     display: flex;

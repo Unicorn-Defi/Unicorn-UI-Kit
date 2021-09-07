@@ -14,7 +14,7 @@ import { socials, MENU_ENTRY_HEIGHT } from "./config";
 import { PanelProps, PushedProps } from "./types";
 import { padding } from "styled-system";
 
-interface Props extends PanelProps, PushedProps { }
+interface Props extends PanelProps, PushedProps {}
 
 const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
 const { MoonIcon, SunIcon, LanguageIcon } = Icons;
@@ -78,7 +78,11 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
-      <img src="https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png" alt="rugdocimage" style={{width:"100%"}} />
+      <img
+        src="https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png"
+        alt="rugdocimage"
+        style={{ width: "100%" }}
+      />
       <Flex>
         <SocialEntry>
           {cakePriceUsd ? (
@@ -89,7 +93,6 @@ const PanelFooter: React.FC<Props> = ({
           ) : (
             <Skeleton width={80} height={24} />
           )}
-
         </SocialEntry>
         <Button variant="text" onClick={() => toggleTheme(!isDark)}>
           <Flex alignItems="center">
@@ -147,8 +150,14 @@ const PanelFooter: React.FC<Props> = ({
         <Dropdown
           position="top-right"
           target={
-            <Button variant="text" style={{ padding: "2px" }} startIcon={<LanguageIcon color="textSubtle" width="20px" />}>
-              <Text style={{ fontSize: "18px" }} color="textSubtle">{currentLang?.toUpperCase()}</Text>
+            <Button
+              variant="text"
+              style={{ padding: "2px" }}
+              startIcon={<LanguageIcon color="textSubtle" width="20px" />}
+            >
+              <Text style={{ fontSize: "18px" }} color="textSubtle">
+                {currentLang?.toUpperCase()}
+              </Text>
             </Button>
           }
         >
@@ -164,7 +173,6 @@ const PanelFooter: React.FC<Props> = ({
             </MenuButton>
           ))}
         </Dropdown>
-
       </SettingsEntry>
       <div>
         {/* <Dropdown

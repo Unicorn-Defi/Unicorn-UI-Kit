@@ -12,5 +12,5 @@ export interface InputProps extends SpaceProps {
   scale?: Scales;
   isSuccess?: boolean;
   isWarning?: boolean;
-  icon?:string;
+  icon?: string;
 }

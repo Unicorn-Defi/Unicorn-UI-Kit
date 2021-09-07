@@ -5,7 +5,7 @@ import { SvgProps } from "../types";
 const Icon: React.FC<SvgProps> = (props) => {
   return (
     <Svg viewBox="0 0 512 512" {...props}>
-      <image width="32" height="32" href="/images/egg/logo.png"/>
+      <image width="32" height="32" href="/images/egg/logo.png" />
       {/* <circle cx="256" cy="256" r="256" fill="url(#paint0_linear)" />
       <path
         fillRule="evenodd"

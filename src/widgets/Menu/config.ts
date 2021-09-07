@@ -14,7 +14,7 @@ export const links = [
       },
       {
         label: "Liquidity",
-        href:"", // "https://exchange.pancakeswap.finance/#/pool",
+        href: "", // "https://exchange.pancakeswap.finance/#/pool",
       },
     ],
   },
@@ -117,17 +117,17 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href:"https://t.me/unicorndefigroup"
+    href: "https://t.me/unicorndefigroup",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href:"https://twitter.com/UnicornDeFi", //  "https://twitter.com/goosedefi",
+    href: "https://twitter.com/UnicornDeFi", //  "https://twitter.com/goosedefi",
   },
   {
     label: "Reddit",
     icon: "RedditIcon",
-    href: "https://app.gitbook.com/@unicorn-finance/s/unicorn-finance/"//https://www.reddit.com/r/GooseFinanceofficial",
+    href: "https://app.gitbook.com/@unicorn-finance/s/unicorn-finance/", //https://www.reddit.com/r/GooseFinanceofficial",
   },
 ];
 
