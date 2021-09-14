@@ -2341,6 +2341,7 @@ var PanelFooter = function (_a) {
     }
     return (React.createElement(Container$4, null,
         React.createElement("img", { src: "https://rugdoc.io/assets/2021/06/rugdoc-review-badge-with-glow.png", alt: "rugdocimage", style: { width: "100%" } }),
+        React.createElement("img", { src: "https://jagosafer.io/flags/greenflag.svg", alt: "jago flag", style: { width: "100%", paddingLeft: 20, paddingRight: 20 } }),
         React.createElement(Flex, null,
             React.createElement(SocialEntry, null, cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React.createElement(Icon$v, { width: "24px", mr: "8px" }),
